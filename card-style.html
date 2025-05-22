@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Attractive CSS Cards</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 32px rgba(0,0,0,0.25);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+        .card-content {
+            padding: 15px 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .card-description {
+            font-size: 1rem;
+            color: #666;
+            flex-grow: 1;
+        }
+        .card-button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            align-self: flex-start;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+        }
+        .card-button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 650px) {
+            .card {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="nature.jpg" alt="Nature Image" />
+            <div class="card-content">
+                <h2 class="card-title">Beautiful Nature</h2>
+                <p class="card-description">Experience the serenity and beauty of untouched landscapes and vibrant greenery.</p>
+                <a href="#" class="card-button">Explore</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="mal.jpg" alt="Mountain Image" />
+            <div class="card-content">
+                <h2 class="card-title">Majestic Mountains</h2>
+                <p class="card-description">Discover the grandeur of towering peaks and breathtaking mountain views.</p>
+                <a href="#" class="card-button">Discover</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="sai.jpg" alt="City Image" />
+            <div class="card-content">
+                <h2 class="card-title">Urban Exploration</h2>
+                <p class="card-description">Dive into the vibrant life of the city with its unique culture and architecture.</p>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
