@@ -1,0 +1,15 @@
+.container{
+    background-color:peru;
+    display:flex;
+    margin-left:20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    justify-content:space around;
+}
+.p{
+    padding:50px;
+    display:inline;
+    color:aqua;
+    font-size:30;
+
+}
